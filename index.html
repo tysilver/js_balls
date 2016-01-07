@@ -107,7 +107,7 @@
 	}
 
 	var playground = new PlayGround();
-	setInterval(playground.loop, 15);
+	setInterval(playground.loop, 1);
 
 			( function(){
 				var time_pressed;
@@ -129,7 +129,7 @@
 
 				document.onmouseup = function(e){
 					time_pressed = getTime() - mousedown_time;
-					for (var i = 0; i < 100; i ++) {
+					for (var i = 0; i < 50; i ++) {
 					playground.createNewCircle(e.x,e.y, time_pressed);
 				}
 				}
